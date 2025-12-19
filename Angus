@@ -1,0 +1,20 @@
+{
+  "name": "Starter Background Music Mod",
+  "version": "1.0",
+  "description": "A simple mod that plays looping background music in Opera GX",
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["scripts/player.js"]
+  },
+  "mod": {
+    "type": "background-music",
+    "music": [
+      {
+        "name": "Loop Track",
+        "file": "assets/music/bg_loop.ogg",
+        "loop": true,
+        "volume": 0.5
+      }
+    ]
+  }
+}
