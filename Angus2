@@ -1,0 +1,7 @@
+const audio = new Audio(chrome.runtime.getURL('assets/music/bg_loop.ogg'));
+audio.loop = true;
+audio.volume = 0.5;
+
+audio.play().catch(e => {
+  console.warn('Autoplay prevented:', e);
+});
